@@ -12,8 +12,6 @@ def runslope (r, d):
         right += r
         if line[right % 31] == '#':
             trees += 1
-        print (right)
-        print (line[right % 31])
     return trees
     # input()
 
