@@ -13,7 +13,6 @@ def runslope (r, d):
         if line[right % 31] == '#':
             trees += 1
     return trees
-    # input()
 
 totrees = runslope(1, 1) * runslope(3, 1) * runslope (5, 1) * runslope(7, 1)  * runslope(1, 2)
 
