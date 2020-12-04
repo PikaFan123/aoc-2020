@@ -18,7 +18,6 @@ for line in lines:
         passports.append(passportdata)
         passportdata = ""
 
-
 def parseport(passport):
     passdata = passport.strip().split(' ')
     parseddata = {}
@@ -35,13 +34,10 @@ for port in passports:
 validports = 0
 
 for pport in passdicts:
-    print (pport)
-    print (pport.keys())
     if len(pport) < 7:
         continue
     if len(pport) < 8 and "cid" in pport:
         continue
     validports += 1
-
 
 print(validports)

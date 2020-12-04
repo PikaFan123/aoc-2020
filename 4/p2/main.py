@@ -88,8 +88,6 @@ def validate(port): # this is not elegant at all, so many nested ifs, but it wor
     return True
 
 for pport in passdicts:
-    print (pport)
-    print (pport.keys())
     if len(pport) < 7:
         continue
     if len(pport) < 8 and "cid" in pport:
